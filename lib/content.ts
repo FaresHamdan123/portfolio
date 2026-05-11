@@ -7,7 +7,7 @@ export const personal = {
   firstName: "Fares",
   lastName: "Hamdan",
   initials: "FH",
-  role: "Computer Science Engineer",
+  role: "Computer Science · QA · Software-minded",
   subRole: "QA-Minded · Software-Driven · Systems Thinker",
   location: "Ramallah, Palestine",
   locale: "GMT+3 · Open to relocation & remote",

@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="flex flex-col leading-tight">
               <span className="text-sm text-zinc-200">{personal.name}</span>
               <span className="text-[11px] text-zinc-500">
-                Computer Science Engineer · {personal.location}
+                Computer Science · QA · Software-minded · {personal.location}
               </span>
             </div>
           </div>

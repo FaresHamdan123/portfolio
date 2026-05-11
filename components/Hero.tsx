@@ -240,7 +240,7 @@ function PortraitCard() {
                 Role
               </div>
               <div className="text-sm font-medium text-amber-200/90">
-                CS Engineer
+                Computer Science
               </div>
             </div>
           </div>

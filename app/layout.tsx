@@ -25,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://fareshamdan.dev"),
   title: {
-    default: "Fares Hamdan — Computer Science Engineer & QA-Minded Problem Solver",
+    default: "Fares Hamdan — Computer Science · QA · Software-minded",
     template: "%s · Fares Hamdan",
   },
   description:
@@ -49,14 +49,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Fares Hamdan — Computer Science Engineer",
+    title: "Fares Hamdan — Computer Science · QA · Software-minded",
     description:
       "Computer Science graduate. Technical Support Engineer at Arab Islamic Bank. QA-aware. Software-minded. Building a serious international career.",
     siteName: "Fares Hamdan",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fares Hamdan — Computer Science Engineer",
+    title: "Fares Hamdan — Computer Science · QA · Software-minded",
     description:
       "Computer Science graduate. Technical Support Engineer. QA-aware. Software-minded.",
   },
