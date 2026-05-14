@@ -23,7 +23,7 @@ export const personal = {
 } as const;
 
 export const hero = {
-  eyebrow: "Computer Science · Birzeit University · 2022",
+  eyebrow: "Computer Science · QA · Technical Support",
   headline: ["I engineer", "clarity", "from complexity."],
   supportingLine:
     "Computer Science graduate with hands-on experience across technical support, QA, and full-stack development — focused on solving real problems with clear systems thinking.",

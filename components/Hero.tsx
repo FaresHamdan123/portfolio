@@ -52,7 +52,7 @@ export default function Hero() {
               </span>
               <span className="tag">
                 <MapPin className="size-3" />
-                {personal.location}
+                Based in {personal.location}
               </span>
             </motion.div>
 
@@ -61,11 +61,13 @@ export default function Hero() {
               animate="show"
               custom={1}
               variants={fadeUp}
-              className="font-display text-5xl sm:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight"
+              className="hero-display text-[3rem] sm:text-[4.75rem] lg:text-[5.75rem] xl:text-[6.25rem]"
             >
-              <span className="block gradient-text">{hero.headline[0]}</span>
+              <span className="block gradient-text tracking-[-0.015em]">
+                {hero.headline[0]}
+              </span>
               <span className="block">
-                <span className="italic gradient-text-amber">
+                <span className="hero-italic gradient-text-amber">
                   {hero.headline[1]}
                 </span>
               </span>

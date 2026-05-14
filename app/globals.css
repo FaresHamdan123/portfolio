@@ -58,8 +58,11 @@ body {
   background: var(--color-bg);
   color: var(--color-fg);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11", "kern";
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  letter-spacing: -0.005em;
   overflow-x: hidden;
 }
 
@@ -83,10 +86,47 @@ body {
 /* ---------- Typography helpers ---------- */
 .font-display {
   font-family: var(--font-display), ui-serif, Georgia, serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
+  font-feature-settings: "liga", "calt", "kern";
 }
 .font-mono {
   font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Hero headline — premium display treatment.
+   Reserved for the main hero h1 only. */
+.hero-display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+  font-feature-settings: "liga", "calt", "kern", "ss01";
+  text-wrap: balance;
+}
+.hero-display em,
+.hero-display .hero-italic {
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+/* Alternative hero headline — formal, tech-oriented sans (Space Grotesk).
+   Swap on the hero <h1> only: hero-display-tech <-> hero-display.
+   Same gold accent, but no italic — emphasis comes from weight instead. */
+.hero-display-tech {
+  font-family: var(--font-display-tech), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+  font-feature-settings: "kern", "calt", "ss01";
+  text-wrap: balance;
+}
+.hero-display-tech em,
+.hero-display-tech .hero-italic {
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.025em;
 }
 
 .text-balance {

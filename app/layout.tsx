@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import {
+  DM_Sans,
+  Instrument_Serif,
+  JetBrains_Mono,
+  Space_Grotesk,
+} from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const dmSans = DM_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -13,6 +19,15 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: "400",
   style: ["normal", "italic"],
+  display: "swap",
+});
+
+// Alternative hero display font for A/B comparison via .hero-display-tech.
+// Safe to leave loaded — only used when the hero <h1> opts into it.
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-display-tech",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -74,7 +89,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${instrumentSerif.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-[--color-bg] text-[--color-fg] font-sans selection:bg-amber-200/30 selection:text-amber-50">
         {children}
